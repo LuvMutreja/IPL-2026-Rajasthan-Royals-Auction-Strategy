@@ -1,6 +1,6 @@
--- 1.Creating some primary tables like batsmen and bowlers
+## 1.Creating some primary tables like batsmen and bowlers
 
--- 	a)Bowlers
+## 	a)Bowlers
 CREATE TABLE bowlers
 	WITH t1 AS (
 			SELECT match_id
@@ -72,7 +72,7 @@ JOIN player_competition_team_mapping pctm ON t1.player_id = pctm.player_id
 JOIN competitions c ON m.comp_id = c.comp_id
 JOIN players p ON t1.player_id = p.player_id;
 
--- 	b)Batsmen 
+## 	b)Batsmen 
 CREATE TABLE batsmen
 	WITH t1 AS (
 			SELECT match_id
@@ -145,9 +145,9 @@ JOIN player_competition_team_mapping pctm ON t1.player_id = pctm.player_id
 JOIN competitions c ON m.comp_id = c.comp_id;
 
 
--- 2.Matrix wise code (Code for each matrix present in [Auction_Strategy.pdf](./Auction_Strategy.pdf))
+## 2.Matrix wise code (Code for each matrix present in [Auction_Strategy.pdf](./Auction_Strategy.pdf))
 
--- 	a)Matrix1
+## 	a)Matrix1
 SELECT DISTINCT player_name
 	,bowling_type
 FROM bowlers
@@ -164,7 +164,7 @@ ORDER BY CASE player_name
 		ELSE 2
 		END;
         
--- 	b)Matrix2
+## 	b)Matrix2
 SELECT a.player_name
 	,sum(overs) overs
 	,sum(wickets) wickets_taken
@@ -192,7 +192,7 @@ WHERE bowling_type = 'Right-arm Leg-Break'
 GROUP BY a.player_name
 HAVING sum(overs) >= 20;
 
--- 	c)Matrix4
+## 	c)Matrix4
 SELECT name
 	,pl.base_price base_price2026
 	,category
@@ -209,8 +209,8 @@ WHERE au.year = 2025
 		,'Prashant Solanki'
 		);
 
--- 	d)Matrix5
--- 		Data cleaning 
+## 	d)Matrix5
+## 		Data cleaning 
 WITH t1
 AS (
 	SELECT DISTINCT player_id
@@ -223,7 +223,7 @@ UPDATE players a
 JOIN t1 ON a.player_id = t1.player_id
 SET is_wicket_keeper = 1;
 
---
+##
 SELECT DISTINCT a.player_name
 	,left(batting_type, 1) Handed
 	,count(DISTINCT match_id) matches
@@ -257,7 +257,7 @@ GROUP BY 1
 	,2
 HAVING count(DISTINCT match_id) >= 5;
 
--- 	e)Matrix7
+## 	e)Matrix7
 SELECT name
 	,pl.base_price base_price2026
 	,category
@@ -273,7 +273,7 @@ WHERE au.year = 2025
 		,'Salil Arora'
 		);
 
--- 	f)Matrix8
+## 	f)Matrix8
 SELECT CASE 
 		WHEN match_type = 'T20I'
 			THEN 'international'
@@ -332,7 +332,7 @@ GROUP BY CASE
 		ELSE league
 		END;
 
--- 	g)Matrix9
+## 	g)Matrix9
 SELECT a.player_name
 	,sum(runs) / count(CASE 
 			WHEN notout = 0
@@ -371,7 +371,7 @@ HAVING matches > 10
 	AND sr > 150
 	AND avg1 > 30;
 
--- h)Matrix11 
+## h)Matrix11 
 SELECT name
 	,pl.base_price base_price2026
 	,category
@@ -386,5 +386,5 @@ WHERE au.year = 2025
 		,'Shai Hope'
 		);
 
--- All matrix are made presentable using Excel as well as rest of the matrix are made using Excel --
+## All matrix are made presentable using Excel as well as rest of the matrix are made using Excel 
         
