@@ -1,6 +1,6 @@
-*1.Creating some primary tables like batsmen and bowlers*
+-- 1.Creating some primary tables like batsmen and bowlers
 
-## 	a)Bowlers
+ 	-- a)Bowlers
 CREATE TABLE bowlers
 	WITH t1 AS (
 			SELECT match_id
