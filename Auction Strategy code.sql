@@ -1,4 +1,4 @@
-## 1.Creating some primary tables like batsmen and bowlers
+*1.Creating some primary tables like batsmen and bowlers*
 
 ## 	a)Bowlers
 CREATE TABLE bowlers
