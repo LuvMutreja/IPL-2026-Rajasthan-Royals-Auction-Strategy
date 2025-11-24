@@ -7,7 +7,7 @@
 ## 📄 Project Overview
 This project formulates a data-driven auction strategy for the **Rajasthan Royals (RR)** ahead of the IPL 2026 Auction.
 
-Following the retention phase, the team has a remaining purse of **~₹16.05 Cr**. This analysis utilizes 2024-2025 T20 data to identify high-value targets who fill specific structural voids, specifically finding a leg-spinner to partner with Ravindra Jadeja, securing Indian wicket-keeping depth and agressive overseas anchor (to replace Sanju).
+Following the retention phase, the team has a remaining purse of **~₹16.05 Cr**. This analysis utilizes 2024-2025 T20 data to identify high-value targets who fill specific structural voids, specifically finding a leg-spinner to partner with Ravindra Jadeja, securing Indian wicket-keeping depth and aggressive overseas anchor (to replace Sanju).
 
 ## 🎯 Strategic Objectives
 The analysis identifies three critical gaps in the post-retention squad:
