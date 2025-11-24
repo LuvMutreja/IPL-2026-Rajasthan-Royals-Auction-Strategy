@@ -55,6 +55,6 @@ The following bid ceilings were calculated to ensure the team secures one primar
 
 **Total Projected Spend:** ~₹15.40 Cr (leaving ₹0.65 Cr buffer).
 
-🔒 **Full Auction Strategy:** are available in the **[Full PDF Report](./RR-2026-IPL-Auction-Strategy.pdf)**.
+🔒 **Full Auction Strategy:** are available in the **[Full PDF Report](./RR 2026 IPL Auction Strategy.pdf)**.
 ---
 *Disclaimer: This project is a fan-made analysis for the IPL 2026 Auction and is not affiliated with the Rajasthan Royals franchise.*
